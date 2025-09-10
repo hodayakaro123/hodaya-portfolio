@@ -66,6 +66,7 @@ const AboutMe: React.FC = () => {
               "Python",
               "Java",
               "C",
+              "CI/CD",
             ].map((skill, index) => (
               <div
                 key={skill}
