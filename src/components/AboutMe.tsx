@@ -27,18 +27,23 @@ const AboutMe: React.FC = () => {
           {/* Description */}
           <div className="text-lg text-white/90 leading-relaxed mb-8 space-y-4">
             <p>
-              Hello! I'm Hodaya, a creative and innovative software developer
-              with a passion for creating exceptional digital experiences.
+              Hello! I'm Hodaya Karo, a Full Stack Developer with hands-on
+              experience in developing web and mobile applications using modern
+              technologies like React, Node.js, TypeScript, and Next.js.
             </p>
             <p>
-              I specialize in Full Stack development with a focus on modern
-              technologies like React, Node.js, and TypeScript. My love for code
-              is connected with the desire to create solutions that improve
-              people's lives.
+              Currently completing my B.Sc. in Computer Science. Throughout my
+              studies and professional experience, I've built intuitive mobile
+              apps and scalable web platforms – working within Agile
+              environments and cross-functional teams.
             </p>
             <p>
-              Beyond code, I believe in design that combines functionality with
-              aesthetics, creating intuitive and beautiful interfaces.
+              I love turning ideas into smart, user-focused digital solutions
+              that combine performance with great design.
+            </p>
+            <p>
+              A fast learner, proactive team player, and creative thinker I'm
+              ready for my next challenge.
             </p>
           </div>
 
