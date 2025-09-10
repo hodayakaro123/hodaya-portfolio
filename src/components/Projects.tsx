@@ -77,13 +77,7 @@ const Projects: React.FC = () => {
       title: " BaTTeRi",
       description:
         'A dedicated mobile application developed for the Israeli startup BaTTeRi, enabling users to summon a mobile charging robot ("Thomas") to any parking spot—without the need for costly infrastructure or structural modifications. The app delivers an innovative, accessible, and multilingual experience (Hebrew, English, and Greek), featuring fast onboarding with Google Sign-In, real-time charging status tracking, and a complete charging history. This solution turns every parking space into a profitable charging point and supports the adoption of smart, green transportation in Israel and beyond.',
-      technologies: [
-        "React Native",
-        "TypeScript",
-        "Expo",
-        "Firebase",
-        "i18n / Multilingual support",
-      ],
+      technologies: ["React Native", "TypeScript", "Expo", "Firebase", "i18n"],
       githubUrl: "",
       videoUrl: "/videos/batteri-demo.mp4",
       images: [
