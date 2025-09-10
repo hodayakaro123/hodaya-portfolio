@@ -28,8 +28,9 @@ const AboutMe: React.FC = () => {
           <div className="text-lg text-white/90 leading-relaxed mb-8 space-y-4">
             <p>
               Hello! I'm Hodaya Karo, a Full Stack Developer with hands-on
-              experience in developing web and mobile applications using modern
-              technologies like React, Node.js, TypeScript, and Next.js.
+              professional experience in developing web and mobile applications
+              using modern technologies like React, Node.js, TypeScript, and
+              Next.js.
             </p>
             <p>
               Currently completing my B.Sc. in Computer Science. Throughout my
