@@ -51,7 +51,14 @@ const Projects: React.FC = () => {
       title: "Charging Stations",
       description:
         "A Full-Stack application that enables users to find and rent EV charging stations, while allowing station owners to generate income by offering charging sessions. The platform includes user authentication, station booking, real-time map integration, and an advanced admin dashboard. It also features an AI-based algorithm that calculates the optimal route and distance from the user's current location to the selected charging station – enabling smart and efficient navigation. Built with modern web technologies",
-      technologies: ["React", "Node.js", "TypeScript", "MongoDB", "Express"],
+      technologies: [
+        "React",
+        "Node.js",
+        "TypeScript",
+        "MongoDB",
+        "Express",
+        "Swagger",
+      ],
       githubUrl: "https://github.com/TomGuter/Charging-Stations",
       images: [
         project1Image,
