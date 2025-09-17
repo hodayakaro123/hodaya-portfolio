@@ -120,19 +120,7 @@ npm run build
 4. **Push to GitHub** - Netlify auto-deploys
 5. **View live site** - Changes appear within minutes
 
-## 📞 Contact
 
-- **Portfolio**: [hodaya-portfolio.netlify.app](https://hodaya-portfolio.netlify.app)
-- **GitHub**: [@hodayakaro123](https://github.com/hodayakaro123)
-- **LinkedIn**: [hodayakaro](https://www.linkedin.com/in/hodayakaro/)
-- **Resume**: [Download CV](/resume/cv%20-%20Hodaya-Karo.pdf)
-
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
-
----
 
 ⭐ **Star this repository if you found it helpful!**
 
-Made with ❤️ by Hodaya Karo
