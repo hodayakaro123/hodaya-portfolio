@@ -2,84 +2,111 @@ import React from "react";
 
 const AboutMe: React.FC = () => {
   return (
-    <section className="min-h-screen bg-gradient-to-br from-purple-900 via-blue-900 to-indigo-900 flex items-center justify-center p-4">
+    <section id="about" className="min-h-screen bg-gradient-to-br from-slate-900 via-gray-900 to-zinc-900 flex items-center justify-center p-4 pt-24 md:pt-28">
       <div className="max-w-4xl mx-auto text-center">
         {/* Main Title */}
-        <h1 className="text-6xl md:text-8xl font-bold mb-8">
-          <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-blue-400 bg-clip-text text-transparent animate-pulse">
-            About Me
-          </span>
-        </h1>
+        <div className="mb-12">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-4">
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-300 bg-clip-text text-transparent">
+              About Me
+            </span>
+          </h1>
+          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-300 mx-auto rounded-full"></div>
+        </div>
 
         {/* Content Container */}
         <div className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 md:p-12 border border-white/20 shadow-2xl">
           {/* Profile Section */}
           <div className="mb-12">
-            <div className="w-32 h-32 mx-auto mb-6 bg-gradient-to-r from-pink-400 to-purple-400 rounded-full flex items-center justify-center">
-              <span className="text-4xl font-bold text-white">H</span>
+            <div className="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6 bg-gradient-to-r from-blue-500 via-cyan-500 to-blue-400 rounded-full flex items-center justify-center shadow-2xl transform hover:scale-110 transition-transform duration-300 ring-4 ring-white/20">
+              <span className="text-5xl md:text-6xl font-bold text-white">H</span>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-3">
               Hodaya Karo
             </h2>
-            <p className="text-xl text-white/80 mb-6">Full Stack Developer</p>
+            <p className="text-xl md:text-2xl text-white/90 mb-2 font-medium">Full Stack Developer</p>
+            <p className="text-sm md:text-base text-white/70">Building modern web & mobile applications</p>
           </div>
 
           {/* Description */}
-          <div className="text-lg text-white/90 leading-relaxed mb-8 space-y-4">
-            <p>
-              Hello! I'm Hodaya Karo, a Full Stack Developer with hands-on
+          <div className="text-base md:text-lg text-white/90 leading-relaxed mb-8 space-y-5 max-w-3xl mx-auto">
+            <p className="text-center md:text-left">
+              Hello! I'm <span className="font-semibold text-white">Hodaya Karo</span>, a Full Stack Developer with hands-on
               professional experience in developing web and mobile applications
-              using modern technologies like React, Node.js, TypeScript, and
-              Next.js.
+              using modern technologies like <span className="text-blue-300">React</span>, <span className="text-blue-300">Node.js</span>, <span className="text-blue-300">TypeScript</span>, and <span className="text-blue-300">Next.js</span>.
             </p>
-            <p>
-              Currently completing my B.Sc. in Computer Science. Throughout my
+            <p className="text-center md:text-left">
+              Currently completing my <span className="font-semibold text-white">B.Sc. in Computer Science</span>. Throughout my
               studies and professional experience, I've built intuitive mobile
-              apps and scalable web platforms – working within Agile
-              environments and cross-functional teams.
+              apps and scalable web platforms – working within <span className="text-blue-300">Agile</span> environments and cross-functional teams.
             </p>
-            <p>
+            <p className="text-center md:text-left">
               I love turning ideas into smart, user-focused digital solutions
-              that combine performance with great design.
+              that combine <span className="text-cyan-300">performance</span> with <span className="text-cyan-300">great design</span>.
             </p>
-            <p>
-              A fast learner, proactive team player, and creative thinker I'm
+            <p className="text-center md:text-left font-medium">
+              A fast learner, proactive team player, and creative thinker – I'm
               ready for my next challenge.
             </p>
           </div>
 
           {/* Skills */}
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            {[
-              "HTML",
-              "CSS",
-              "React",
-              "React Native",
-              "TypeScript",
-              "Node.js",
-              "Next.js",
-              "Tailwind CSS",
-              "MongoDB",
-              "PostgreSQL",
-              "Docker",
-              "AWS",
-              "C++",
-              "Python",
-              "Java",
-              "C",
-              "CI/CD",
-            ].map((skill, index) => (
-              <div
-                key={skill}
-                className="bg-white/20 rounded-xl p-4 border border-white/30 hover:bg-white/30 transition-all duration-300"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <span className="text-white font-medium">{skill}</span>
-              </div>
-            ))}
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold text-white mb-4 text-center">Technical Skills</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+              {[
+                "HTML",
+                "CSS",
+                "React",
+                "React Native",
+                "TypeScript",
+                "Node.js",
+                "Next.js",
+                "Tailwind CSS",
+                "MongoDB",
+                "PostgreSQL",
+                "Docker",
+                "AWS",
+                "C++",
+                "Python",
+                "Java",
+                "C",
+                "CI/CD",
+              ].map((skill, index) => (
+                <div
+                  key={skill}
+                  className="bg-white/20 backdrop-blur-sm rounded-xl p-4 border border-white/30 hover:bg-white/30 hover:border-white/50 transition-all duration-300 transform hover:scale-105 hover:shadow-lg group"
+                  style={{ animationDelay: `${index * 0.05}s` }}
+                >
+                  <span className="text-white font-medium group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-blue-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300">
+                    {skill}
+                  </span>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {/* Social Links - First Row */}
+          {/* Languages */}
+          <div className="mb-8">
+            <h3 className="text-2xl font-bold text-white mb-4 text-center">Languages</h3>
+            <div className="flex flex-wrap justify-center gap-4">
+              {[
+                { name: "Hebrew", level: "Native", flag: "🇮🇱" },
+                { name: "English", level: "Fluent", flag: "🇬🇧" },
+                // Add more languages if needed
+              ].map((lang) => (
+                <div
+                  key={lang.name}
+                  className="bg-white/20 backdrop-blur-sm rounded-xl p-4 border border-white/30 hover:bg-white/30 hover:border-white/50 transition-all duration-300 transform hover:scale-105 min-w-[140px] text-center"
+                >
+                  <div className="text-3xl mb-2">{lang.flag}</div>
+                  <div className="text-white font-semibold mb-1">{lang.name}</div>
+                  <div className="text-white/70 text-sm">{lang.level}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="https://github.com/hodayakaro123"
@@ -112,7 +139,7 @@ const AboutMe: React.FC = () => {
               <span>LinkedIn</span>
             </a>
             <a
-              href="/resume/cv - Hodaya-Karo.pdf"
+              href="/resume/Resume%20Hodaya%20Karo.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="group inline-flex items-center space-x-3 bg-gradient-to-r from-emerald-500 to-teal-600 hover:from-emerald-600 hover:to-teal-700 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
@@ -138,7 +165,7 @@ const AboutMe: React.FC = () => {
           <div className="mt-6 text-center">
             <a
               href="mailto:hodayak3@gmail.com"
-              className="group bg-gradient-to-r from-pink-500 to-purple-600 hover:from-pink-600 hover:to-purple-700 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 mx-auto"
+              className="group bg-gradient-to-r from-blue-600 to-cyan-600 hover:from-blue-700 hover:to-cyan-700 text-white font-semibold py-4 px-8 rounded-full transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center justify-center space-x-2 mx-auto"
             >
               <svg
                 className="w-5 h-5 group-hover:scale-110 transition-transform duration-300"
@@ -160,13 +187,13 @@ const AboutMe: React.FC = () => {
 
         {/* Decorative Elements */}
         <div className="flex justify-center items-center space-x-8 mt-12">
-          <div className="w-2 h-2 bg-pink-400 rounded-full animate-bounce"></div>
+          <div className="w-2 h-2 bg-blue-400 rounded-full animate-bounce"></div>
           <div
-            className="w-3 h-3 bg-purple-400 rounded-full animate-bounce"
+            className="w-3 h-3 bg-cyan-400 rounded-full animate-bounce"
             style={{ animationDelay: "0.1s" }}
           ></div>
           <div
-            className="w-2 h-2 bg-blue-400 rounded-full animate-bounce"
+            className="w-2 h-2 bg-blue-300 rounded-full animate-bounce"
             style={{ animationDelay: "0.2s" }}
           ></div>
         </div>
@@ -174,13 +201,13 @@ const AboutMe: React.FC = () => {
 
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
         <div
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"
+          className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"
           style={{ animationDelay: "2s" }}
         ></div>
         <div
-          className="absolute top-40 left-40 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"
+          className="absolute top-40 left-40 w-80 h-80 bg-slate-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"
           style={{ animationDelay: "4s" }}
         ></div>
       </div>

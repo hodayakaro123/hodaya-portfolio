@@ -91,16 +91,16 @@ const Projects: React.FC = () => {
   ];
 
   return (
-    <section className="min-h-screen bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 flex items-center justify-center p-4">
+    <section id="projects" className="min-h-screen bg-gradient-to-br from-zinc-900 via-slate-900 to-gray-900 flex items-center justify-center p-4 py-16 md:py-20">
       <div className="max-w-6xl mx-auto">
-        {/* Section Title */}
         <div className="text-center mb-16">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6">
-            <span className="bg-gradient-to-r from-blue-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-pulse">
+          <h1 className="text-5xl md:text-6xl lg:text-7xl font-extrabold mb-4">
+            <span className="bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-300 bg-clip-text text-transparent">
               My Projects
             </span>
           </h1>
-          <p className="text-xl text-white/80 max-w-2xl mx-auto">
+          <div className="w-32 h-1 bg-gradient-to-r from-blue-400 via-cyan-400 to-blue-300 mx-auto rounded-full mb-6"></div>
+          <p className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto">
             Explore my portfolio of full-stack applications and innovative
             solutions
           </p>
@@ -111,7 +111,7 @@ const Projects: React.FC = () => {
           {projects.map((project, index) => (
             <div
               key={project.id}
-              className="bg-white/10 backdrop-blur-sm rounded-3xl p-8 border border-white/20 shadow-2xl hover:bg-white/15 transition-all duration-300 transform hover:scale-105"
+              className="bg-white/10 backdrop-blur-sm rounded-3xl p-6 md:p-8 border border-white/20 shadow-2xl hover:bg-white/15 hover:border-white/40 transition-all duration-300 transform hover:scale-[1.02] hover:shadow-2xl"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {/* Project Header */}
@@ -119,7 +119,7 @@ const Projects: React.FC = () => {
                 <h3 className="text-2xl md:text-3xl font-bold text-white mb-3">
                   {project.title}
                 </h3>
-                <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-purple-400 rounded-full"></div>
+                <div className="w-16 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-full"></div>
               </div>
 
               {/* Project Images */}
@@ -183,7 +183,7 @@ const Projects: React.FC = () => {
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="bg-gradient-to-r from-blue-500/20 to-purple-500/20 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-400/30"
+                      className="bg-gradient-to-r from-blue-500/20 to-cyan-500/20 text-blue-200 px-3 py-1 rounded-full text-sm border border-blue-400/30"
                     >
                       {tech}
                     </span>
@@ -248,11 +248,11 @@ const Projects: React.FC = () => {
         <div className="flex justify-center items-center space-x-8 mt-16">
           <div className="w-2 h-2 bg-blue-400 rounded-full animate-bounce"></div>
           <div
-            className="w-3 h-3 bg-purple-400 rounded-full animate-bounce"
+            className="w-3 h-3 bg-cyan-400 rounded-full animate-bounce"
             style={{ animationDelay: "0.1s" }}
           ></div>
           <div
-            className="w-2 h-2 bg-pink-400 rounded-full animate-bounce"
+            className="w-2 h-2 bg-blue-300 rounded-full animate-bounce"
             style={{ animationDelay: "0.2s" }}
           ></div>
         </div>
@@ -260,13 +260,13 @@ const Projects: React.FC = () => {
 
       {/* Background Animation */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"></div>
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"></div>
         <div
-          className="absolute -bottom-40 -left-40 w-80 h-80 bg-purple-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"
+          className="absolute -bottom-40 -left-40 w-80 h-80 bg-cyan-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"
           style={{ animationDelay: "2s" }}
         ></div>
         <div
-          className="absolute top-40 left-40 w-80 h-80 bg-pink-500 rounded-full mix-blend-multiply filter blur-xl opacity-20 animate-pulse"
+          className="absolute top-40 left-40 w-80 h-80 bg-slate-600 rounded-full mix-blend-multiply filter blur-xl opacity-10 animate-pulse"
           style={{ animationDelay: "4s" }}
         >
           {" "}
