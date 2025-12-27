@@ -1,8 +1,8 @@
-# 🚀 Hodaya Karo - Portfolio
+# Hodaya Karo - Portfolio
 
 A modern, responsive portfolio website showcasing my full-stack development projects and skills.
 
-## ✨ Features
+## Features
 
 - **Modern Design** - Beautiful gradients, animations, and responsive layout
 - **Interactive Projects** - Image galleries with modal view and video demos
@@ -10,18 +10,18 @@ A modern, responsive portfolio website showcasing my full-stack development proj
 - **Fast Performance** - Built with Vite for lightning-fast loading
 - **TypeScript** - Type-safe development
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend**: React 18, TypeScript, Tailwind CSS
 - **Build Tool**: Vite
 - **Deployment**: Netlify
 - **Version Control**: Git & GitHub
 
-## 📱 Live Demo
+## Live Demo
 
-🌐 **Visit the live site**: [hodaya-portfolio.netlify.app](https://hodaya-portfolio.netlify.app)
+ **Visit the live site**: [hodaya-portfolio.netlify.app](https://hodaya-portfolio.netlify.app)
 
-## 🎯 Projects Showcase
+## Projects Showcase
 
 ### 1. Charging Stations
 
@@ -37,7 +37,7 @@ A modern, responsive portfolio website showcasing my full-stack development proj
 - **Tech**: React, Node.js, TypeScript, MongoDB, Express, Chart.js, Socket.io
 - **Demo**: Watch the video demo on the live site
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -97,7 +97,7 @@ src/
 - Custom gradients and animations
 - Responsive design patterns
 
-## 📦 Build & Deploy
+##  Build & Deploy
 
 ### Build for Production
 
@@ -112,7 +112,7 @@ npm run build
 3. Set publish directory: `dist`
 4. Deploy automatically on every push to main
 
-## 🔄 Development Workflow
+##  Development Workflow
 
 1. **Make changes** to the code
 2. **Test locally** with `npm run dev`
