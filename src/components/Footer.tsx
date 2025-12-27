@@ -1,8 +1,6 @@
 import React from "react";
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear();
-
   return (
     <footer className="bg-black/40 backdrop-blur-sm border-t border-white/10 py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -136,15 +134,6 @@ const Footer: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
-
-        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-white/60 text-sm mb-4 md:mb-0">
-            © {currentYear} Hodaya Karo. All rights reserved.
-          </p>
-          <p className="text-white/60 text-sm">
-            Made with <span className="text-blue-400">❤️</span> using React & TypeScript
-          </p>
         </div>
       </div>
     </footer>
