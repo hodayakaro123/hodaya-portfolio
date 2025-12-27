@@ -137,6 +137,15 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
+
+        <div className="border-t border-white/10 pt-8 flex flex-col md:flex-row justify-between items-center">
+          <p className="text-white/60 text-sm mb-4 md:mb-0">
+            © {currentYear} Hodaya Karo. All rights reserved.
+          </p>
+          <p className="text-white/60 text-sm">
+            Made with <span className="text-blue-400">❤️</span> using React & TypeScript
+          </p>
+        </div>
       </div>
     </footer>
   );
